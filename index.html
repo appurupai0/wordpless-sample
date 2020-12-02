@@ -2,185 +2,214 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!------------ Box icons -------------->
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <!------------------ css ----------------->
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+	<!------------ Box icons -------------->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<!------------ swiper css ------------>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!------------------ css ----------------->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
 </head>
 
 <body>
-  <!------------------- Scroll Top ---------------------->
-  <a href="#" class="scrolltop" id="scroll-top">
-    <i class="bx bx-chevron-up scrolltop__icon"></i>
-  </a>
-  <!-------------------x Scroll Top x---------------------->
+	<!------------------- Scroll Top ---------------------->
+	<a href="#" class="scrolltop" id="scroll-top">
+		<i class="bx bx-chevron-up scrolltop__icon"></i>
+	</a>
+	<!-------------------x Scroll Top x---------------------->
 
-  <!------------------- Header --------------------------->
+	<!------------------- Header --------------------------->
 
-  <header class="l-header" id="header">
-    <nav class="nav bd-container">
-      <a href="#" class="nav__logo">Sneaker</a>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">Topic</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#new" class="nav__link">new</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="#" class="nav__logo">Sneaker</a>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">Topic</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#new" class="nav__link">new</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
-        </ul>
-      </div>
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-    </nav>
-  </header>
+				</ul>
+			</div>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+			</div>
+		</nav>
+	</header>
 
-  <!-------------------x Header x------------------------->
+	<!-------------------x Header x------------------------->
 
-  <!-------------------- main ---------------------------->
-  <main class="l-main">
+	<!-------------------- main ---------------------------->
+	<main class="l-main">
 
-    <!----------------------- Home ---------------------------->
+		<!----------------------- Home ---------------------------->
 
-    <!-----------------------x Home x-------------------------->
+		<!-----------------------x Home x-------------------------->
 
-    <!----------------------- About --------------------------->
-    <section class="about section bd-container" id="about">
-      <div class="about__container bd-grid">
-        <div class="about__data">
-          <span class="section-subtitle about__initial">About us</span>
-          <h2 class="section-title about__initial">紹介<br>スニーカーサイト</h2>
-          <p class="about__description">We.</p>
-          <a href="#" class="button">Explore history</a>
-        </div>
+		<!----------------------- swiper -------------------------->
+		<!-- Swiper -->
+		<aside class="asidecontent">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="img/about.jpg" alt=""></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</aside>
+		<!---------------------x swiper x------------------------->
 
-        <img src="img/home.png" alt="" class="about__img">
-      </div>
-    </section>
+		<!----------------------- About --------------------------->
+		<section class="about section bd-container" id="about">
+			<div class="about__container bd-grid">
+				<div class="about__data">
+					<span class="section-subtitle about__initial">About us</span>
+					<h2 class="section-title about__initial">紹介<br>スニーカーサイト</h2>
+					<p class="about__description">We.</p>
+					<a href="#" class="button">Explore history</a>
+				</div>
 
-    <!----------------------x About x-------------------------->
+				<img src="img/home.png" alt="" class="about__img">
+			</div>
+		</section>
 
-    <!--------------------- New ---------------------------->
-    <section class="new section bd-container" id="new">
-      <span class="section-subtitle">New</span>
-      <h2 class="section-title">New of the week</h2>
+		<!----------------------x About x-------------------------->
 
-      <div class="new__container bd-grid">
-        <div class="new__content">
-          <img src="img/sneaker-01.jpg" alt="" class="new__img">
-          <h3 class="new__name">Nike</h3>
-          <span class="new__detail">DC8380-500</span>
-          <span class="mnew__preci">未定</span>
-          <a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
-        </div>
+		<!--------------------- New ---------------------------->
+		<section class="new section bd-container" id="new">
+			<span class="section-subtitle">New</span>
+			<h2 class="section-title">New of the week</h2>
 
-        <div class="new__content">
-          <img src="img/sneaker-02.jpg" alt="" class="new__img">
-          <h3 class="new__name">Adidas</h3>
-          <span class="new__detail">CP9652</span>
-          <span class="new__preci">¥30,800</span>
-          <a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
-        </div>
+			<div class="new__container bd-grid">
+				<div class="new__content">
+					<img src="img/sneaker-01.jpg" alt="" class="new__img">
+					<h3 class="new__name">Nike</h3>
+					<span class="new__detail">DC8380-500</span>
+					<span class="mnew__preci">未定</span>
+					<a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
+				</div>
 
-        <div class="new__content">
-          <img src="img/sneaker-03.jpg" alt="" class="new__img">
-          <h3 class="new__name">New Balance</h3>
-          <span class="new__detail">M992GG</span>
-          <span class="new__preci">¥31,900</span>
-          <a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
-        </div>
+				<div class="new__content">
+					<img src="img/sneaker-02.jpg" alt="" class="new__img">
+					<h3 class="new__name">Adidas</h3>
+					<span class="new__detail">CP9652</span>
+					<span class="new__preci">¥30,800</span>
+					<a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
+				</div>
 
-        <div class="new__content">
-          <img src="img/sneaker-04.jpg" alt="" class="new__img">
-          <h3 class="new__name">Nike</h3>
-          <span class="new__detail">DD3223-100</span>
-          <span class="new__preci">¥24,200</span>
-          <a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
-        </div>
-      </div>
-    </section>
+				<div class="new__content">
+					<img src="img/sneaker-03.jpg" alt="" class="new__img">
+					<h3 class="new__name">New Balance</h3>
+					<span class="new__detail">M992GG</span>
+					<span class="new__preci">¥31,900</span>
+					<a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
+				</div>
 
-    <!---------------------x Menu x---------------------------->
+				<div class="new__content">
+					<img src="img/sneaker-04.jpg" alt="" class="new__img">
+					<h3 class="new__name">Nike</h3>
+					<span class="new__detail">DD3223-100</span>
+					<span class="new__preci">¥24,200</span>
+					<a href="#" class="button new__button"><i class="bx bx-cart-alt"></i></a>
+				</div>
+			</div>
+		</section>
 
-    <!---------------------- Contact us --------------------->
+		<!---------------------x Menu x---------------------------->
 
-    <section class="contact section bd-container" id="contact">
-      <div class="contact__container bd-grid">
-        <div class="contact__data">
-          <span class="section-subtitle contact__initial">Let's talk</span>
-          <h2 class="section-title contact__initial">Contact us</h2>
-          <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will
-            attend you quickly, with our 24/7 chat service.</p>
-        </div>
-        <div class="contact__button">
-          <a href="#" class="button">Contact us now</a>
-        </div>
-      </div>
-    </section>
+		<!---------------------- Contact us --------------------->
 
-    <!--------------------x Contact us x-------------------->
+		<section class="contact section bd-container" id="contact">
+			<div class="contact__container bd-grid">
+				<div class="contact__data">
+					<span class="section-subtitle contact__initial">Let's talk</span>
+					<h2 class="section-title contact__initial">Contact us</h2>
+					<p class="contact__description">If you want to reserve a table in our restaurant, contact us and we
+						will
+						attend you quickly, with our 24/7 chat service.</p>
+				</div>
+				<div class="contact__button">
+					<a href="#" class="button">Contact us now</a>
+				</div>
+			</div>
+		</section>
 
-  </main>
-  <!--------------------x main x---------------------------->
+		<!--------------------x Contact us x-------------------->
 
-  <!----------------------- Footer --------------------------->
-  <footer class="footer section bd-container">
-    <div class="footer__container bd-grid">
-      <div class="footer__content">
-        <a href="#" class="footer__logo">Tasty Food</a>
-        <span class="footer__description">Restaurant</span>
-        <div>
-          <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-          <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-          <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-        </div>
-      </div>
+	</main>
+	<!--------------------x main x---------------------------->
 
-      <div class="footer__content">
-        <h3 class="footer__title">Services</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Delivery</a></li>
-          <li><a href="#" class="footer__link">Pricing</a></li>
-          <li><a href="#" class="footer__link">Fase food</a></li>
-          <li><a href="#" class="footer__link">Reserve your spot</a></li>
-        </ul>
+	<!----------------------- Footer --------------------------->
+	<footer class="footer section bd-container">
+		<div class="footer__container bd-grid">
+			<div class="footer__content">
+				<a href="#" class="footer__logo">Tasty Food</a>
+				<span class="footer__description">Restaurant</span>
+				<div>
+					<a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+					<a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+					<a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+				</div>
+			</div>
 
-      </div>
+			<div class="footer__content">
+				<h3 class="footer__title">Services</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Delivery</a></li>
+					<li><a href="#" class="footer__link">Pricing</a></li>
+					<li><a href="#" class="footer__link">Fase food</a></li>
+					<li><a href="#" class="footer__link">Reserve your spot</a></li>
+				</ul>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Information</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Event</a></li>
-          <li><a href="#" class="footer__link">Contact us</a></li>
-          <li><a href="#" class="footer__link">Privacy policy</a></li>
-          <li><a href="#" class="footer__link">Terms of serbices</a></li>
-        </ul>
-      </div>
+			</div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Adress</h3>
-        <ul>
-          <li>Lima - Peru</li>
-          <li>Jr Union #999</li>
-          <li>999 - 888 - 777</li>
-          <li>tastyfood@email.com</li>
-        </ul>
-      </div>
-    </div>
+			<div class="footer__content">
+				<h3 class="footer__title">Information</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Event</a></li>
+					<li><a href="#" class="footer__link">Contact us</a></li>
+					<li><a href="#" class="footer__link">Privacy policy</a></li>
+					<li><a href="#" class="footer__link">Terms of serbices</a></li>
+				</ul>
+			</div>
 
-    <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+			<div class="footer__content">
+				<h3 class="footer__title">Adress</h3>
+				<ul>
+					<li>Lima - Peru</li>
+					<li>Jr Union #999</li>
+					<li>999 - 888 - 777</li>
+					<li>tastyfood@email.com</li>
+				</ul>
+			</div>
+		</div>
 
-  </footer>
+		<p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
 
-  <!----------------------x Footer x--------------------------->
+	</footer>
 
-  <!---------------------- Main js ------------------------->
-  <script src="js/main.js"></script>
+	<!----------------------x Footer x--------------------------->
+	<!-- swiper js -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!---------------------- Main js ------------------------->
+	<script src="js/main.js"></script>
 </body>
 
 </html>
