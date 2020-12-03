@@ -380,6 +380,19 @@ body {
   border-radius: .5rem 0 .5rem 0;
 }
 
+/* news imformaition */
+
+
+.news-content{
+	margin-left: var(--mb-5);
+	justify-content: center;
+	display: block;
+}
+
+.news-content .bold{
+	font-weight: var(--font-semi-bold);
+}
+
 
 /* contact */
 .contact__container {
@@ -467,6 +480,17 @@ body {
   .contact__button {
     justify-self: center;
   }
+
+  .news{
+	display: flex;
+	justify-content: center;
+   }
+
+  .news-content{
+	margin-left: var(--mb-5);
+	grid-template-columns: repeat(2, 1fr);
+  	justify-content: center;
+   }
 }
 
 @media screen and (min-width: 768px) {
