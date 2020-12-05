@@ -307,10 +307,23 @@ body {
 .topic__container {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  width: 100%;
+}
+
+.topic__container .up__img {
+  overflow: hidden;
 }
 
 .topic__ditail {
   margin-bottom: var(--mb-3);
+}
+
+.topic__img {
+  transition: all .5s ease;
+}
+
+.topic__img:hover {
+  transform: scale(1.2);
 }
 
 
